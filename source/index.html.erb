@@ -1,0 +1,31 @@
+---
+title: CoderDojo's i Sverige
+---
+
+<% url_list = {
+  "Helsingborg" => "http://www.creativelab.nu/coderdojo/",
+  "Lund" => "http://lund.coderdojo.se/",
+  "Malmö" => "http://malmo.coderdojo.se",
+  "Stockholm" => "http://coderdojostockholm.se/",
+  "Växjö" => "http://vaxjo.coderdojo.se/",
+} %>
+
+<div class="row-fluid">
+  <div class="centering">
+
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">Coder dojo's i sverige</h3></div>
+        <div class="panel-body">
+          <% url_list.each_pair do |city, href| %>
+            <div>
+            <h4><%= city %></h4>
+            <a href="<%= href %>"><%= href %></a>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
